@@ -1,0 +1,12 @@
+drivermanager\Driver.class
+pages\BasePage.class
+tests\DemoBankingFunctionsTest.class
+pages\DepositPage.class
+pages\LoginPage.class
+pages\RegistrationPage.class
+pages\AmountDeposit.class
+pages\GenerationPage.class
+pages\NewCustomerPage.class
+config\Configuration.class
+pages\ManagerPage.class
+pages\NewAccountPage.class
