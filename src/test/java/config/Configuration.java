@@ -2,6 +2,7 @@ package config;
 
 public class Configuration {
 
+
     private static final String baseUrl = "http://demo.guru99.com/v4/";
 
     private static final String customerFilePath = "D:\\CustomerID.txt";

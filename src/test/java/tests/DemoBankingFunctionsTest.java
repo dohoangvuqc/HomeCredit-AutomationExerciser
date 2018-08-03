@@ -34,7 +34,7 @@ public class DemoBankingFunctionsTest {
         Driver.initialize(browserName);
         Driver.getInstance().get(Configuration.getBaseUrl());
         LoginPage.getInstance().isLoaded();
-        LoginPage.getInstance().enterUserID("mngr143133").enterPassword("gUpytYt").submitLogin();
+        LoginPage.getInstance().enterUserID("mngr146503").enterPassword("zemygYb").submitLogin();
         Thread.sleep(1000);
         ManagerPage.getInstance().isLoggedIn();
     }
@@ -82,7 +82,7 @@ public class DemoBankingFunctionsTest {
         Person person = fairy.person();           //create person object
 
         return new Object[][] {
-                {person.getFirstName()+"HC","09251985","52 Madden St","Phoenix","Arizona","123456","10236954",person.getEmail(),person.getPassword()}
+                {person.getFirstName()+"HCUsers","09251985","52 Madden St","Phoenix","Arizona","123456","10236954",person.getEmail(),person.getPassword()}
         };
     }
 
@@ -125,6 +125,5 @@ public class DemoBankingFunctionsTest {
 
         AmountDeposit.getInstance().isDeposited();                 //verify deposit function of bank system
     }
-
 
 }

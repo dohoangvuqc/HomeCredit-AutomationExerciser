@@ -9,6 +9,7 @@ import org.testng.Assert;
 
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -25,8 +26,6 @@ public class RegistrationPage extends BasePage {
 
     @FindBy(xpath = "//*[@id=\"account\"]/tbody/tr[4]/td[2]")
     WebElement accountIdCell;
-
-
 
     private String pageTitle = "Guru99 Bank Customer Registration Page";
 

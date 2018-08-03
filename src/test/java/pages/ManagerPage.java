@@ -15,13 +15,13 @@ public class ManagerPage extends BasePage{
     }
 
 
-    @FindBy(xpath = "/html/body/div[3]/div/ul/li[2]/a")
+    @FindBy(css = ".menusubnav > li:nth-child(2) > a:nth-child(1)")
     WebElement newCustomer;
 
-    @FindBy(xpath = "/html/body/div[3]/div/ul/li[5]/a")
+    @FindBy(css = ".menusubnav > li:nth-child(5) > a:nth-child(1)")
     WebElement newAccount;
 
-    @FindBy(xpath = "/html/body/div[3]/div/ul/li[8]/a")
+    @FindBy(css = ".menusubnav > li:nth-child(8) > a:nth-child(1)")
     WebElement deposit;
 
     private String pageTitle = "Guru99 Bank Manager HomePage";
