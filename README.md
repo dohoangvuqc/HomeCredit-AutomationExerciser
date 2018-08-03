@@ -15,7 +15,7 @@ A Test Automation Framework using Page Factory Design Pattern and TestNG Framewo
 
 ## Test Scenarios
 ```
-Feature: Creating New Customer Funtion
+Feature: Creating New Customer Function
   Background:
     Given User is on webpage "http://demo.guru99.com/"
     When User enters UserID with "mngr146503" and Password with "zemygYb" and submit Login Button
@@ -29,7 +29,7 @@ Feature: Creating New Customer Funtion
 ```
         
 ```
-Feature: Creating New Account Funtion by using created Customer ID
+Feature: Creating New Account Function by using created Customer ID
   Background:
     Given User is on webpage "http://demo.guru99.com/"
     When User enters UserID with "mngr146503" and Password with "zemygYb" and submit Login Button
@@ -42,7 +42,7 @@ Feature: Creating New Account Funtion by using created Customer ID
     And Saves Account ID in external file
 ```
 ```
-Feature: Deposit Funtion
+Feature: Deposit Function
   Background:
     Given User is on webpage "http://demo.guru99.com/"
     When User enters UserID with "mngr146503" and Password with "zemygYb" and submit Login Button
