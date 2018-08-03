@@ -14,41 +14,47 @@ A Test Automation Framework using Page Factory Design Pattern and TestNG Framewo
 3. Install Maven on Windows
 
 ## Test Scenarios
-1. Feature: Creating New Customer Funtion
-    Background:
-        Given User is on webpage "http://demo.guru99.com/"
-        When User enters UserID with "mngr146503" and Password with "zemygYb" and submit Login Button
-        Then User logged-in succesfully and navigated to Manager HomePage
-    Scenario: Create new customer
-        Given User is on Manager HomePage
-        When User navigates to New Customer Page
-        And User fills infomation in the form and click Submit Button
-        Then Appears 'Registered Successfully' Message and shows Registered Customer details table
-        Saves Customer ID in external file 
+```
+Feature: Creating New Customer Funtion
+  Background:
+    Given User is on webpage "http://demo.guru99.com/"
+    When User enters UserID with "mngr146503" and Password with "zemygYb" and submit Login Button
+    Then User logged-in succesfully and navigated to Manager HomePage
+  Scenario: Create new customer
+    Given User is on Manager HomePage
+    When User navigates to New Customer Page
+    And User fills information in the form and click Submit Button
+    Then Appears 'Registered Successfully' Message and shows Registered Customer details table
+    And Saves Customer ID in external file 
+```
         
-  2. Feature: Creating New Account Funtion by using created Customer ID  
-    Background:
-        Given User is on webpage "http://demo.guru99.com/"
-        When User enters UserID with "mngr146503" and Password with "zemygYb" and submit Login Button
-        Then User logged-in succesfully and navigated to Manager HomePage
-    Scenario: Create new account
-        Given User is on Manager HomePage
-        When User navigates to New Account Page
-        And User uses stored CustomerID to fills in the form and select Current Type and fill Initial Deposit with "10000" then             click Submit Button
-        Then Appears 'Account Generated Successfully' Message and shows Created Account details table
-        Saves Account ID in external file 
-   
-   3. Feature: Deposit Funtion
-    Background:
-        Given User is on webpage "http://demo.guru99.com/"
-        When User enters UserID with "mngr146503" and Password with "zemygYb" and submit Login Button
-        Then User logged-in succesfully and navigated to Manager HomePage
-    Scenario: Deposit
-        Given User is on Manager HomePage
-        When User navigates to Deposit Page
-        And User uses stored Account ID to fill in Account No and enters Ammount with "20000" and enters Description with "added 20k" then click Submit Button
-        Then Appears 'Transaction details of Deposit for Account No' table
-        And Current Balance is 30000
+```
+Feature: Creating New Account Funtion by using created Customer ID
+  Background:
+    Given User is on webpage "http://demo.guru99.com/"
+    When User enters UserID with "mngr146503" and Password with "zemygYb" and submit Login Button
+    Then User logged-in succesfully and navigated to Manager HomePage
+  Scenario: Create new account
+    Given User is on Manager HomePage
+    When User navigates to New Account Page
+    And User uses stored CustomerID to fills in the form and select Current Type and fill Initial Deposit with "10000" then click Submit Button
+    Then Appears 'Account Generated Successfully' Message and shows Created Account details table
+    And Saves Account ID in external file
+```
+```
+Feature: Deposit Funtion
+  Background:
+    Given User is on webpage "http://demo.guru99.com/"
+    When User enters UserID with "mngr146503" and Password with "zemygYb" and submit Login Button
+    Then User logged-in succesfully and navigated to Manager HomePage
+  Scenario: Deposit
+    Given User is on Manager HomePage
+    When User navigates to Deposit Page
+    And User uses stored Account ID to fill in Account No and enters Ammount with "20000" and enters Description with "added 20k" then click Submit Button
+    Then Appears 'Transaction details of Deposit for Account No' table
+    And Current Balance is 30000
+```   
+
         
         
 
